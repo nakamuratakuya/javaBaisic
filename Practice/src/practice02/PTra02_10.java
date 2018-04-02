@@ -21,6 +21,18 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
 		 */
+         double c;
+        c = coffee  *= 1.08;
+
+        System.out.println(c);
+
+       double  s;
+        s = snack * 1.08;
+
+        System.out.println(s);
+
+        System.out.println(moneyInHand-(c*2+s) );
+
 
 	}
 }
