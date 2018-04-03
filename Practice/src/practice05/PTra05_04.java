@@ -33,10 +33,7 @@ public class PTra05_04 {
 
 		  String line = scanner.nextLine();
 
-
-
-
-		  switch(line) {
+          switch(line) {
 			case "0":
 				System.out.println("日曜");
 
