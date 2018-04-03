@@ -27,10 +27,10 @@ public class PTra05_04 {
 
 		// ①
 
-    do {
+
 	       System.out.println("0～6の整数を入力してください");
-    }
-    while(line<=6&&line>=0) ;
+
+
 		  String line = scanner.nextLine();
 
 
@@ -65,6 +65,8 @@ public class PTra05_04 {
 			    System.out.println("土曜");
 
 		        break;
+		    default:
+		        System.out.println("0～6の整数を入力してください");
 
 
 	  }
