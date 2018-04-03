@@ -26,12 +26,12 @@ public class PTra02_10 {
 
         System.out.println(c);
 
-       double  s;
-        s = snack * 1.08;
+       int  s;
+        s =(int)(snack * 1.08);
 
         System.out.println(s);
 
-        System.out.println(moneyInHand-(c*2+s) );
+        System.out.println((int)(moneyInHand-(c*2+s) ));
 
 
 	}
