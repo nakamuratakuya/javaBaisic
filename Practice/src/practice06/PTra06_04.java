@@ -20,6 +20,7 @@ public class PTra06_04 {
 
 				System.out.print("■");
 
+	         }
+		 }
 	}
-		 }}
 }
