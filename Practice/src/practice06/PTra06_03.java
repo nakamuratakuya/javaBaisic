@@ -20,9 +20,9 @@ public class PTra06_03 {
 		 * ■
 		 */
 		 for (int i = 0; i < 5; i++) {
-if(i%1==0) {
+
 				   System.out.println("■");
-				 			   }
+
 		 }
 	}
 }

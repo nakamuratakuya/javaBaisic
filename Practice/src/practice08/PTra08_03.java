@@ -17,8 +17,8 @@ public class PTra08_03 {
 		int random = new java.util.Random().nextInt(limitNumber + 1);
 	    int number = random;
 		// ★ 変数resultを宣言し、メソッドisEvenNumberを（変数number）で呼び出した結果を代入してください
-              boolean result =isEvenNumber(x);
-
+	    boolean result =isEvenNumber(number);
+	    System.out.println( number);
 		if (result) {
 			System.out.println("偶数です");
 		} else {
@@ -35,14 +35,12 @@ public class PTra08_03 {
 	 *
 	 * 引数で渡された内容が偶数ならtrue、奇数ならfalseを返すメソッド
 	 */
-	public static boolean isEvenNumber(int x) {
-		 if(%2==0) {
-			 boolean result = true;
-		 } else {
-				  result = false;
-			 }
-
-		 return result;
-		 }
+	public static boolean isEvenNumber (int x) {
+		if (x%2==0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 }
 
