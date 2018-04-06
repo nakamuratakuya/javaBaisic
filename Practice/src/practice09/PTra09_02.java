@@ -5,16 +5,19 @@ package practice09;
  *------------------------------------------------------------
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
-
+import practice09.util.Util;
 public class PTra09_02 {
+	private static final char[] String = null;
+
 	public static void main(String[] args) {
 		String[] array = {"Plain", "Island", "Mountain", "Swamp", "Forest"};
 
 		// ★ 配列arrayを、Util内のメソッドを用いてランダムに並び替えてください
 		// ※ Utilはインポートしても良いし、完全限定名で記述しても良いです
-
-
+		String[] shuffledarray = Util.shuffleArray(array);
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
-
+		for ( String s :shuffledarray ){
+		System.out.println(s) ;
+		}
 	}
 }

@@ -43,6 +43,7 @@ public class Util {
 	/**
 	 * 配列の中身をシャッフルした結果を取得します。
 	 * @param array	シャッフルしたい配列
+	 * @return
 	 * @return		シャッフルした結果の配列
 	 */
 	public static String[] shuffleArray(String[] array) {
