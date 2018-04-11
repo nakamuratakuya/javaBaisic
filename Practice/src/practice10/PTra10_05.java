@@ -48,5 +48,27 @@ public class PTra10_05 {
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
 
+
+			int sum = 0;
+			int n = 0;
+
+			while(true) {
+				n++;
+				    int i = car.run();
+				    sum += i;
+
+				    System.out.println(sum);
+
+				    int x = car.gasoline;
+				    	if(i == -1){
+				    		System.out.println("目的地に到達できませんでした。");
+				    			break;
+				    	}
+				    	if (distance < sum) {
+				    		System.out.println("目的地までに"+n+"時間かかりました。残りのガソリンは、"+x+"ℓです。");
+				    			break;
+				    	}
+			}
 	}
 }
+
