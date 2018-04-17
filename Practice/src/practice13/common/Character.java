@@ -35,7 +35,9 @@ public class Character {
 		this.power = power;
 		this.endurance = endurance;
 	}
-
+	public int gethp() {
+		return hp;
+	}
 	/**
 	 * 名前を設定します
 	 * @param name	設定したい名前
