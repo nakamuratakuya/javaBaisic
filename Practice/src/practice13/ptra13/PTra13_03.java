@@ -5,18 +5,13 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice13.ptra13;
-import practice13.common.Character;
+import practice13.common.Slime;
 public class PTra13_03 {
 
 	/*
 	 * ★ common.Characterクラスを継承した、common.Slimeクラスを作成してください
 	 * 	●HP, POWER, ENDURANCEはそれぞれ、（10, 5, 2）
 	 */
-public static class Slime extends Character{
-	public Slime () {
-		super(10, 5, 2);
-	}
-}
 	public static void main(String[] args) {
 		// ★ common.Slimeクラスをインスンタンス化してください
 		Slime slime = new Slime();

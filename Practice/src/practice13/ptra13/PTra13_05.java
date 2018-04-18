@@ -20,5 +20,19 @@ public class PTra13_05 {
 	 * 		name, additionalDamageに初期値を設定するコンストラクタ
 	 * 		上記2つを設定するための引数を持つ
 	 */
+	public static class Item {            //アイテムクラスの作成	//
+		private String name;               //フィールドの設定//
+		private int additionalDamage;
 
+		public String getname() {   				//アクセサの作成//
+			return this.name;
+		}
+		public int getadditionalDamage() {
+			return this.additionalDamage;
+		}
+		public Item(String name,int additionalDamage) {
+			this.name = name;
+			this.additionalDamage = additionalDamage;
+		}
+	}
 }

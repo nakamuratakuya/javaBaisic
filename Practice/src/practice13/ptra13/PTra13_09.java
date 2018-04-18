@@ -5,7 +5,7 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice13.ptra13;
-
+import  practice13.common.Employee;
 public class PTra13_09 {
 
 	/*
@@ -34,6 +34,20 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
-
+		Employee [] employees = new Employee[3];
+		Employee employee = new Employee();
+			for(int i = 0;i < employees.length; i++) {
+				employee.setUserNm(NAMEDATA[i]) ;
+				employee.setMail(MAILDATA[i]);
+				employee.setPassword(PASSDATA[i]);
+				employee.setDepartmentNm(QUATERDATA[0][i]);
+				employee.setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
+				employees[i] = employee;
+				System.out.println(employees[i].getUserNm());
+				System.out.println(employees[i].getMail());
+				System.out.println(employees[i].getPassword());
+				System.out.println(employees[i].getDepartmentNm());
+				System.out.println(employees[i].getDepartmentCnt());
+			}
 	}
 }
