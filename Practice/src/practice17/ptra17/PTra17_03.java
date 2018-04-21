@@ -35,27 +35,29 @@ public class PTra17_03 {
 		 *
 		 */
 		boolean result = true;
-		while(!(result)) {
-		try {
-			for (int i = 0; i < question.length; i++) {
-				System.out.println("問題：" + (i + 1));
-				System.out.println(question[i]);
+		while (result) {
+			try {
 
-				System.out.println("回答を数字で入力してください");
-				String input = ThrowExceptionUtil.inputValue();
+				for (int i = 0; i < question.length; i++) {
+					System.out.println("問題：" + (i + 1));
+					System.out.println(question[i]);
 
-				int num = Integer.parseInt(input);
+					System.out.println("回答を数字で入力してください");
+					String input = ThrowExceptionUtil.inputValue();
 
-				if (answer[i] == num) {
-					score++;
+					int num = Integer.parseInt(input);
+
+					if (answer[i] == num) {
+						score++;
+					}
 				}
+				result = false;
+			} catch (IOException e) {
+				System.out.println("例外が発生しました");
+			} catch (NumberFormatException e) {
+				System.out.println("回答を数字で入力してください");
+				result = true;
 			}
-		} catch (IOException e) {
-			System.out.println("例外が発生しました");
-		} catch (NumberFormatException e) {
-			System.out.println("回答を数字で入力してください");
-			result = false;
-		}
 		}
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
