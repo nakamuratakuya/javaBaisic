@@ -35,7 +35,9 @@ public class PTra17_03 {
 		 *
 		 */
 		boolean result = true;
+
 		while (result) {
+
 			try {
 
 				for (int i = 0; i < question.length; i++) {
@@ -56,12 +58,11 @@ public class PTra17_03 {
 				System.out.println("例外が発生しました");
 			} catch (NumberFormatException e) {
 				System.out.println("回答を数字で入力してください");
-				result = true;
+				score = 0;
 			}
 		}
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
-
 	}
 
 }
