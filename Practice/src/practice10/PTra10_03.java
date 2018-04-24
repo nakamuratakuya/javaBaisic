@@ -37,6 +37,21 @@ public class PTra10_03 {
 
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
+		User us = new User();
+		System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		String line = scanner.nextLine();
+		String [] w = line.split(",",0);
+		System.out.println(w[0]);
+
+		us.userId = Integer.parseInt(w[0]);
+		us.userNm = w[1];
+		us.mail = w[2];
+		us.password = w[3];
+		System.out.println(us.userId);
+		System.out.println(us.userNm);
+		System.out.println(us.mail);
+		System.out.println(us.password);
 
 	}
 }

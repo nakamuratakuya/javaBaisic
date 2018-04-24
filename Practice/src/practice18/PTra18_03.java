@@ -9,7 +9,6 @@ package practice18;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 import entity.Player;
@@ -20,7 +19,6 @@ public class PTra18_03 {
 	 * PTra19_02で作成したPlayerクラスを使用します
 	 */
 
-	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 
 		/*
@@ -42,17 +40,22 @@ public class PTra18_03 {
 				player.setteam(splitline[3]);
 
 				playerList.add(player);
+
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("ファイルが見つかりません");
 		}
 
-	        ArrayList<String> player2 = new ArrayList<>();
-	        Collections.addAll(player2, "レアル・マドリード", "バルセロナ");
-	        playerList.removeAll(player2);
-
-		for (Player p :playerList) {
-			System.out.println(p);
+		for (int i = 0; i < playerList.size(); i++) {
+			Player player = playerList.get(i);
+			String team = player.getteam();
+			if (team.equals("レアル・マドリード") || (team.equals("バルセロナ"))) {
+				playerList.remove(i);
+				i--;
+			}
+			else {
+				System.out.println(playerList.get(i));
+			}
 		}
 
 		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください

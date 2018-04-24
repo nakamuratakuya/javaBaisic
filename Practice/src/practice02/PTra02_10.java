@@ -8,9 +8,9 @@ package practice02;
 
 public class PTra02_10 {
 	public static void main(String[] args) {
-		int moneyInHand = 1000;	// 所持金
-		int coffee = 120;	// コーヒーの値段
-		int snack = 200;	// スナック菓子
+		int moneyInHand = 1000; // 所持金
+		int coffee = 120; // コーヒーの値段
+		int snack = 200; // スナック菓子
 
 		/*
 		 * ●一本120円（税別）の缶コーヒーを2本
@@ -21,18 +21,17 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
 		 */
-         double c;
-        c = coffee  *= 1.08;
+		double c;
+		c = coffee * 1.08;
 
-        System.out.println(c);
+		System.out.println(c);
 
-       int  s;
-        s =(int)(snack * 1.08);
+		double s;
+		s =  snack * 1.08;
 
-        System.out.println(s);
+		System.out.println(s);
 
-        System.out.println((int)(moneyInHand-(c*2+s) ));
-
+		System.out.println((int) (moneyInHand - (c * 2 + s)));
 
 	}
 }

@@ -31,18 +31,18 @@ public class PTra13_04 {
 		 */
 		boolean result;
 		while (true) {
-			 result = slime.damage(hero.attack());
+			result = slime.damage(hero.attack());
 			System.out.println(slime.gethp());
 
-			if(result)   {
-				System.out.println(hero.getName()+"は"+slime.getName()+"に勝利した");
+			if (result) {
+				System.out.println(hero.getName() + "は" + slime.getName() + "に勝利した");
 				break;
 			}
-			 result = hero.damage(slime.attack());
-			 System.out.println(hero.gethp());
+			result = hero.damage(slime.attack());
+			System.out.println(hero.gethp());
 
-			   if(result) {
-				System.out.println(slime.getName()+"は"+hero.getName()+"に勝利した");
+			if (result) {
+				System.out.println(slime.getName() + "は" + hero.getName() + "に勝利した");
 				break;
 			}
 		}

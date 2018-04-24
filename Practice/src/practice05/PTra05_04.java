@@ -25,48 +25,49 @@ public class PTra05_04 {
 		 *
 		 */
 
-		// ①
-while (true) {
-	       System.out.println("0～6の整数を入力してください");
+		//
+		boolean loopFlg = true;
+		while (loopFlg) {
+			System.out.println("0～6の整数を入力してください");
 
-	       String  line = scanner.nextLine();
+			String line = scanner.nextLine();
 
-	if (line == "6") {
+			loopFlg = false;
 
-	    switch(line) {
-	    case "0":
-			System.out.println("日曜");
+			switch (line) {
+			case "0":
+				System.out.println("日曜");
+				break;
 
-			break;
-		case "1":
-			System.out.println("月曜");
+			case "1":
+				System.out.println("月曜");
+				break;
 
-			break;
-	    case "2":
-		    System.out.println("火曜");
+			case "2":
+				System.out.println("火曜");
+				break;
 
-	        break;
-	    case "3":
-		    System.out.println("水曜");
+			case "3":
+				System.out.println("水曜");
+				break;
 
-	        break;
-	    case "4":
-		    System.out.println("木曜");
+			case "4":
+				System.out.println("木曜");
+				break;
 
-	         break;
-	    case "5":
-		    System.out.println("金曜");
+			case "5":
+				System.out.println("金曜");
+				break;
 
-	        break;
-	    case "6":
-		    System.out.println("土曜");
+			case "6":
+				System.out.println("土曜");
+				break;
 
-	        break;
-         }
-	}else
-		  continue;
+			default:
+				System.out.println("正しい値を入力してください");
+				loopFlg = true;
+			}
+		}
 
-
-      }
+	}
 }
-   }

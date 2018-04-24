@@ -52,4 +52,5 @@ public class Player {
 		sb.append(this.team);
 		return sb.toString();
 	}
+
 }

@@ -21,11 +21,9 @@ public class PTra05_02 {
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになって良いです
 		int input = Integer.parseInt(line);
 
-
 		// 文字列を数字に変換して、変数numに代入します
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになり、プログラムが終了します
 		int num = Integer.parseInt(line);
-
 
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください
@@ -35,19 +33,16 @@ public class PTra05_02 {
 		 *
 		 *  ※##は変数inputの中身
 		 */
-		switch(input%2) {
-		  case 0:
-			  System.out.println(input+"は偶数です");
-			  break;
+		switch (input % 2) {
+		case 0:
+			System.out.println(input + "は偶数です");
+			break;
 
-		  default:
-			  System.out.println(input+"は奇数です");
-			  break;
-
+		default:
+			System.out.println(input + "は奇数です");
+			break;
 
 		}
-
-
 
 	}
 }

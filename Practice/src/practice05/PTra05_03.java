@@ -63,9 +63,9 @@ public class PTra05_03 {
 			 index++;
 		}
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
-		System.out.println("山  "+mountain+"人目");
-		System.out.println("川  "+river+"人目");
-		System.out.println("海  "+ocean+"人目");
+		System.out.println("山  "+mountain+"人");
+		System.out.println("川  "+river+"人");
+		System.out.println("海  "+ocean+"人");
 
 	}
 }
